@@ -1,6 +1,7 @@
 *{
   box-sizing: border-box;
 }
+
 body, html, section, main, div, aside {
   margin: 0;
   border: 0;
@@ -9,29 +10,182 @@ body, html, section, main, div, aside {
 }
 
 body {
-  height:auto;
-  width:100%;
-  /*display: flex;*/
+  display: flex;
+  width: 100%;
+  background-image: url(assets/zoe-by-the-river.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header {
-  height:150px;
-  width:100%;
-  background-color: black;
-  
-}
-.top-nav-links {
-  display: inline-block;
-  float: right;
-
-
+h1 {
+  color: #DEE1DD;
+  position: absolute;
+  margin: 0;
+  top: 25px;
+  left: 50px;
+  font-size: 96px;
+  text-shadow:
 }
 
-.main-photo-container {
-  height:500px;
-  width:100%;
-  background-color:green;
+h2 {
+  color: #DEE1DD;
+  position: absolute;
+  margin: 0;
+  top: 125px;
+  left: 50px;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
+}
 
+.top-navigation{
+  position: absolute;
+  display:flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0;
+  top:125px;
+  right:100px;
+  font-size: 24px;
+}
 
+.top-nav-link {
+  text-decoration: none;
+  color: #DEE1DD;
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 25px;
+}
 
+.top-nav-link:hover {
+  color: #92AD36;
+  border-bottom: 2px solid #92AD36;
+}
+
+.main-text-container {
+  width:500px;
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+
+.main-text {
+  color: #DEE1DD;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  line-height: 30px;
+  justify-content: space-around;
+}
+
+.qualifications {
+  width:500px;
+  position: absolute;
+  top: 425px;
+  right: 100px;
+  color: #DEE1DD;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+}
+
+.qualifications-list {
+  padding-left: 15px;
+}
+
+.button-section-container {
+  width: 500px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  position:absolute;
+  top: 625px;
+  right:100px;
+}
+
+.button {
+  background-color: inherit;
+  height: 100px;
+  width: 100px;
+  border-style: none;
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.button:hover {
+  border: 2px solid #92AD36;
+}
+
+.button:focus{
+  outline: none;
+}
+
+.lower-form-section {
+  width: 500px;
+  position: absolute;
+  top: 725px;
+  right:100px;
+}
+
+.form-text {
+  color: #DEE1DD;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
+  margin:15px 0 0 0;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #DEE1DD;
+}
+
+.input-field {
+  border: none;
+  display: flex;
+  align-content: center;
+  width:400px;
+  height: 30px;
+  opacity: .25;
+  margin-bottom: 5px;
+  color: #FFFFFF;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.form-submit-button {
+  background-color: #92AD36;
+  color: #DEE1DD;
+  border: 0;
+  width: 400px;
+  height: 30px;
+}
+
+.form-submit-button:focus {
+  outline: none;
+}
+
+.blog-button {
+  background-image: url(assets/zoe-sitting.jpg);
+}
+
+.gallery-button {
+  background-image: url(assets/zoe-upsidedown.jpg);
+}
+
+.news-button {
+  background-image: url(assets/zoe-with-sunglasses.jpg);
+}
+
+.consult-button {
+  background-image: url(assets/zoe-at-table-with-beer.jpg);
 }
